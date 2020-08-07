@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
 import './App.css';
 import Modal from '../../components/UI/Modal/Modal';
+import Alert from '../../components/UI/Alert/Alert';
 
 function App() {
-  const [isOpenModal, setIsOpenModal] = useState(false);
+  const [ShowModal, setShowModal] = useState(false);
+  const [ShowAlert, setShowAlert] = useState(false);
+
   const closeModalWin = () => {
-    setIsOpenModal(false);
+    setShowModal(false);
+  };
+  const CloseAlertWin = () => {
+    setShowAlert(false);
   };
   const modalBtns =
     [
@@ -16,7 +22,7 @@ function App() {
     <div className="App">
       <Modal
         title="something"
-        isOpen={isOpenModal}
+        show={ShowModal}
         closed={closeModalWin}
         modalBtns={modalBtns}
       >
@@ -24,9 +30,21 @@ function App() {
       </Modal>
       <button
         onClick={() => {
-          setIsOpenModal(true);
+          setShowModal(true);
         }}
       >Open modal</button>
+      <Alert
+        closed={CloseAlertWin}
+        color="#fff"
+        show={ShowAlert}
+        dismiss={() => alert("you pressed on cross.")}
+      >
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, labore.
+      </Alert>
+      <button
+        onClick={
+          () => setShowAlert(true)
+        }>call alert function</button>
     </div >
   );
 }

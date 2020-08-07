@@ -1,0 +1,18 @@
+.Alert{
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px black;   
+}
+.Alert .close-btn{
+    background-color: transparent;
+    border: none;
+}

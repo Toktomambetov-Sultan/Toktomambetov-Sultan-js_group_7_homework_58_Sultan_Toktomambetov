@@ -3,16 +3,15 @@ import './Modal.css';
 import BlackBack from '../BlackBack/BlackBack';
 
 export default function Modal(props) {
-    console.log(props);
     return (
         <>
             <BlackBack
                 onClick={props.closed}
-                isOpen={props.isOpen}
+                show={props.show}
             />
 
             <div className="Modal" style={{
-                display: props.isOpen ? "block" : "none",
+                display: props.show ? "block" : "none",
             }}>
                 <div className="top">
                     <h4 className="title">{props.title}</h4>

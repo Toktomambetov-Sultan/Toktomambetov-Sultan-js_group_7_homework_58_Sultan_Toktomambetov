@@ -7,7 +7,7 @@ export default function BlackBack(props) {
             className="BlackBack"
             onClick={props.onClick}
             style={{
-                display: props.isOpen ? "block" : "none",
+                display: props.show ? "block" : "none",
             }}
         />
     );
