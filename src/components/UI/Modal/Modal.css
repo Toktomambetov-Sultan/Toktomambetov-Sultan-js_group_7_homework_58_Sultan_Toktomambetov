@@ -1,0 +1,86 @@
+.Modal {
+    position: fixed;
+    z-index: 500;
+    background-color: white;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+    left: 15%;
+    top: 30%;
+    box-sizing: border-box;
+}
+.Modal .top{
+    padding: 15px 15px;
+    border-bottom: 2px solid rgba(204, 204, 204, 0.438);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Modal .title{
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+}
+.Modal .close-btn{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    outline: none;
+}
+.Modal .close-btn:active,
+.Modal .close-btn:focus{
+    outline: none;
+}
+.Modal .close-btn:hover{
+    background-color: rgb(104, 139, 255);
+    color: rgb(0, 60, 255);
+}
+.Modal .close-btn:active{
+    background-color: rgb(104, 139, 255);
+    color: red;
+}
+.Modal .center{
+    padding: 15px 15px 20px;
+    border-bottom: 2px solid rgba(204, 204, 204, 0.438);
+}
+.Modal .bottom{
+    padding: 15px 10px;
+}
+.Modal .content{
+    margin: 0;
+    padding: 0;      
+}
+.Modal .bottomBtn{
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    margin: 0 5px ;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.Modal .bottomBtn:first-of-type {
+    margin-left: 0;
+}
+.Modal .primary {
+    color: #103e92;
+    border: 1px solid #103e92;
+}
+
+.Modal .danger {
+    color: #944317;
+    border: 1px solid #944317;
+}
