@@ -1,16 +1,32 @@
 .Alert{
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    width: 400px;
-    transform: translate(-50%);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
-    box-shadow: 1px 1px 1px black;   
+    box-shadow: 1px 1px 1px black;
+    margin: 10px 0;   
+}
+.Alert.success{
+    background-color: rgb(45, 255, 4);
+    border: 1px solid rgb(9, 107, 0);
+    color: #fff;
+}
+.Alert.danger{
+    background-color: rgb(255, 0, 0);
+    border: 1px solid rgb(143, 0, 0);
+    color: #fff;
+}
+.Alert.warning{
+    background-color: rgb(255, 123, 0);
+    border: 1px solid rgb(151, 73, 0);
+    color: #fff;
+}
+.Alert.primary{
+    background-color: rgb(0, 110, 255);
+    border: 1px solid rgb(1, 50, 116);
+    color: #fff;
 }
 .Alert .close-btn{
     background-color: transparent;

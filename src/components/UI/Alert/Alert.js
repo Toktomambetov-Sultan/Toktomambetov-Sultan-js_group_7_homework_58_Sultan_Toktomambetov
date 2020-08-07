@@ -1,20 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Alert.css";
-import BlackBack from '../BlackBack/BlackBack';
 
 export default function Alert(props) {
     return (
         <>
-            <BlackBack
-                onClick={props.closed}
-                show={props.show}
-            />
             <div
-                className="Alert"
-                style={{
-                    display: props.show ? "flex" : "none",
-                    backgroundColor: props.color,
-                }}
+                className={["Alert", props.type].join(" ")}
             >
                 <p className="content">{props.children}</p>
                 {props.dismiss ? (
