@@ -1,0 +1,7 @@
+.Alerts{
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%);
+}
